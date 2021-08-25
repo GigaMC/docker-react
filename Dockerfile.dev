@@ -1,0 +1,16 @@
+#Image from Docker
+FROM node:alpine
+
+#Working for Application
+WORKDIR '/app'
+
+#Files to copy to Docker Container
+COPY package.json .
+RUN npm install
+
+#Copy everything else from Project Directory
+COPY  . .
+
+#Run our command to start up the project
+CMD ["npm", "run", "start"]
+
