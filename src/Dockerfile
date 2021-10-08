@@ -6,5 +6,5 @@ COPY . .
 RUN nmp run build
 
 FROM nginx
-EXPOSE 443
+EXPOSE 80
 COPY --from=builder /app/build /usr/share/nginx/html
