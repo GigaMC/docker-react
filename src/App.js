@@ -7,7 +7,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          I am running in a Docker Container and Testing with Travis!
+          I am running in a Docker Container!
           <br/>
           Edit <code>src/App.js</code> and save to reload.
         </p>
